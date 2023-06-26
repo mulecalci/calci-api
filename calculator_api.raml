@@ -1,0 +1,60 @@
+#%RAML 1.0
+title: calculator_api
+version: v1
+traits:
+  sample: !include /traits/trait.raml
+
+/addition:
+  get:
+    is:
+      - sample
+    responses:
+      200:
+        body:
+          application/json:
+            example: !include /examples/response/addtion-response.json
+                     
+/multiply:  
+  post:
+      is:
+        - sample
+      responses:
+        200:
+            body:
+              application/json:
+               example: !include /examples/response/multiplication-response.json
+     
+/divison:
+  put:
+      is:
+        - sample
+      responses:
+        200:
+            body:
+              application/json:
+               example: !include /examples/response/divison-response.json 
+       
+/subtraction:
+  delete:
+      is:
+       - sample
+      responses:
+        200:
+            body:
+              application/json:
+               example: !include /examples/response/subtraction-response.json
+             
+
+                  
+                         
+
+            
+                                                    
+              
+            
+        
+                                                                
+
+              
+          
+  
