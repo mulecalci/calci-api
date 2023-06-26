@@ -1,0 +1,357 @@
+{
+	"info": {
+		"_postman_id": "6193ef5d-f899-482b-9491-d68a2f75a559",
+		"name": "calculator_api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26668524"
+	},
+	"item": [
+		{
+			"name": "/addition",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/addition?number1=10&number2=2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"addition"
+					],
+					"query": [
+						{
+							"key": "number1",
+							"value": "10"
+						},
+						{
+							"key": "number2",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "200",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/addition",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"addition"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "\"/examples/response/addtion-response.json could not be resolved.\""
+				},
+				{
+					"name": "400",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/addition",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"addition"
+							]
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n  \"Message\": \"Bad Request\"\n}"
+				}
+			]
+		},
+		{
+			"name": "/multiply",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/multiply?number1=10&number2=2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"multiply"
+					],
+					"query": [
+						{
+							"key": "number1",
+							"value": "10"
+						},
+						{
+							"key": "number2",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "200",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/multiply",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"multiply"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "\"/examples/response/multiplication-response.json could not be resolved.\""
+				},
+				{
+					"name": "400",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/multiply",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"multiply"
+							]
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n  \"Message\": \"Bad Request\"\n}"
+				}
+			]
+		},
+		{
+			"name": "/divison",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/divison?number1=10&number2=2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"divison"
+					],
+					"query": [
+						{
+							"key": "number1",
+							"value": "10"
+						},
+						{
+							"key": "number2",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "200",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/divison",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"divison"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "\"/examples/response/divison-response.json could not be resolved.\""
+				},
+				{
+					"name": "400",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/divison",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"divison"
+							]
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n  \"Message\": \"Bad Request\"\n}"
+				}
+			]
+		},
+		{
+			"name": "/subtraction",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/subtraction?number1=10&number2=2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"subtraction"
+					],
+					"query": [
+						{
+							"key": "number1",
+							"value": "10"
+						},
+						{
+							"key": "number2",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "200",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/subtraction",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"subtraction"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "\"/examples/response/subtraction-response.json could not be resolved.\""
+				},
+				{
+					"name": "400",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/subtraction",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"subtraction"
+							]
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n  \"Message\": \"Bad Request\"\n}"
+				}
+			]
+		}
+	],
+	"variable": [
+		{
+			"key": "baseUrl",
+			"value": "",
+			"type": "string"
+		}
+	]
+}
